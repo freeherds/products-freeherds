@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freeherds Hub | Ravenna</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .glass-card {
+            background: rgba(17, 24, 39, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .hero-gradient {
+            background: radial-gradient(circle at top right, rgba(239, 68, 68, 0.15), transparent),
+                        radial-gradient(circle at bottom left, rgba(16, 185, 129, 0.1), transparent);
+        }
+    </style>
+</head>
+<body class="bg-gray-950 text-white font-sans selection:bg-red-500/30">
+
+    <header class="relative pt-20 pb-32 overflow-hidden hero-gradient">
+        <div class="max-w-7xl mx-auto px-6 text-center relative z-10">
+            <div class="inline-block px-4 py-1 rounded-full border border-red-500/30 bg-red-500/10 text-red-500 text-[10px] font-black uppercase tracking-[0.4em] mb-6">
+                Ravenna Ecosystem
+            </div>
+            <h1 class="text-6xl md:text-8xl font-black uppercase tracking-tighter mb-4 italic">
+                Free<span class="text-red-600">herds</span>
+            </h1>
+            <p class="text-gray-400 max-w-2xl mx-auto text-sm md:text-base leading-relaxed uppercase tracking-widest font-light">
+                Connettiamo passioni, lavoro e cultura nel cuore di Ravenna.
+            </p>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-6 -mt-20 relative z-20">
+        <div class="grid md:grid-cols-2 gap-8">
+            
+            <a href="https://cineclub-ravenna.it" class="group relative block">
+                <div class="absolute -inset-1 bg-gradient-to-r from-red-600 to-red-900 rounded-[3rem] blur opacity-25 group-hover:opacity-50 transition duration-500"></div>
+                <div class="relative glass-card p-10 rounded-[3rem] h-full flex flex-col justify-between transition-transform duration-500 group-hover:-translate-y-2">
+                    <div>
+                        <div class="w-16 h-16 bg-red-600 rounded-2xl flex items-center justify-center mb-8 shadow-xl">
+                            <span class="text-3xl">🍿</span>
+                        </div>
+                        <h2 class="text-4xl font-black uppercase italic mb-4">Cineclub<br><span class="text-red-600">Ravenna</span></h2>
+                        <p class="text-gray-400 text-sm leading-relaxed mb-10">La community che recensisce e vive il grande cinema a Ravenna. Classifiche, voti e proiezioni collettive.</p>
+                    </div>
+                    <div class="flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-red-500">
+                        Esplora il club <span class="group-hover:translate-x-2 transition-transform">→</span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="https://coworking-ravenna.it" class="group relative block">
+                <div class="absolute -inset-1 bg-gradient-to-r from-emerald-600 to-teal-900 rounded-[3rem] blur opacity-25 group-hover:opacity-50 transition duration-500"></div>
+                <div class="relative glass-card p-10 rounded-[3rem] h-full flex flex-col justify-between transition-transform duration-500 group-hover:-translate-y-2">
+                    <div>
+                        <div class="w-16 h-16 bg-emerald-600 rounded-2xl flex items-center justify-center mb-8 shadow-xl">
+                            <span class="text-3xl">💻</span>
+                        </div>
+                        <h2 class="text-4xl font-black uppercase italic mb-4">Coworking<br><span class="text-emerald-500">Ravenna</span></h2>
+                        <p class="text-gray-400 text-sm leading-relaxed mb-10">Spazi flessibili per nomadi digitali e professionisti. Lavora, collabora e cresci nella nostra rete locale.</p>
+                    </div>
+                    <div class="flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-emerald-500">
+                        Prenota la tua postazione <span class="group-hover:translate-x-2 transition-transform">→</span>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+
+        <section class="mt-32 pb-20 text-center">
+            <h3 class="text-xs font-black uppercase tracking-[0.5em] text-gray-500 mb-12 italic">The Vision</h3>
+            <div class="grid md:grid-cols-3 gap-12 text-left">
+                <div class="p-8 border-l border-gray-900">
+                    <span class="text-red-600 font-mono text-sm">01.</span>
+                    <h4 class="font-black uppercase mt-4 mb-2">Community First</h4>
+                    <p class="text-gray-500 text-xs leading-relaxed">Mettiamo le persone al centro, creando connessioni reali attraverso interessi comuni.</p>
+                </div>
+                <div class="p-8 border-l border-gray-900">
+                    <span class="text-red-600 font-mono text-sm">02.</span>
+                    <h4 class="font-black uppercase mt-4 mb-2">Local Growth</h4>
+                    <p class="text-gray-500 text-xs leading-relaxed">Valorizziamo il territorio di Ravenna portando innovazione digitale e spazi creativi.</p>
+                </div>
+                <div class="p-8 border-l border-gray-900">
+                    <span class="text-red-600 font-mono text-sm">03.</span>
+                    <h4 class="font-black uppercase mt-4 mb-2">No Censura</h4>
+                    <p class="text-gray-500 text-xs leading-relaxed">Libertà di espressione e recensione, dai film ai posti di lavoro. Solo verità.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="border-t border-gray-900 py-20 bg-gray-950">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col items-center">
+            <h2 class="text-2xl font-black uppercase italic mb-8">Free<span class="text-red-600">herds</span></h2>
+            <div class="flex gap-8 text-[10px] font-bold uppercase tracking-[0.3em] text-gray-500 mb-10">
+                <a href="#" class="hover:text-white transition">Instagram</a>
+                <a href="#" class="hover:text-white transition">WhatsApp</a>
+                <a href="#" class="hover:text-white transition">LinkedIn</a>
+            </div>
+            <p class="text-[9px] text-gray-700 uppercase tracking-widest">© 2026 Freeherds Ecosystem | Designed in Romagna</p>
+        </div>
+    </footer>
+
+</body>
+</html>
