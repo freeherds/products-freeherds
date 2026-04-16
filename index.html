@@ -15,14 +15,20 @@
             background: radial-gradient(circle at top right, rgba(239, 68, 68, 0.15), transparent),
                         radial-gradient(circle at bottom left, rgba(16, 185, 129, 0.1), transparent);
         }
-        @keyframes pulse-red {
-            0% { filter: drop-shadow(0 0 5px rgba(220,38,38,0.4)); }
-            50% { filter: drop-shadow(0 0 20px rgba(220,38,38,0.7)); }
-            100% { filter: drop-shadow(0 0 5px rgba(220,38,38,0.4)); }
+        .logo-bolt {
+            /* Stato iniziale leggero */
+            filter: drop-shadow(0 0 8px rgba(220, 38, 38, 0.2));
+            cursor: pointer;
         }
 
         .logo-bolt:hover {
             animation: pulse-red 2s infinite;
+        }
+
+        @keyframes pulse-red {
+            0% { filter: drop-shadow(0 0 8px rgba(220, 38, 38, 0.4)); }
+            50% { filter: drop-shadow(0 0 25px rgba(220, 38, 38, 0.8)); }
+            100% { filter: drop-shadow(0 0 8px rgba(220, 38, 38, 0.4)); }
         }
     </style>
 </head>
@@ -34,7 +40,9 @@
                 Ravenna Ecosystem
             </div>
             <h1 class="mb-4">
-                <img src="resources/logo-freeherds.png" alt="Freeherds Logo" class="h-20 md:h-32 mx-auto drop-shadow-[0_0_15px_rgba(220,38,38,0.3)]">
+                <img src="resources/logo-freeherds.png" 
+                    alt="Freeherds Logo" 
+                    class="h-20 md:h-32 mx-auto logo-bolt transition-all duration-500">
             </h1>
             <p class="text-gray-400 max-w-2xl mx-auto text-sm md:text-base leading-relaxed uppercase tracking-widest font-light">
                 Connettiamo passioni, lavoro e cultura nel cuore di Ravenna.
